@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Introducción a Python Científico.</title>
+    <!-- Styles -->
+    <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript">
+
+    </script>
+    <script type="text/javascript">
+    init_mathjax = function() {
+        if (window.MathJax) {
+            // MathJax loaded
+            MathJax.Hub.Config({
+                tex2jax: {
+                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+                },
+                displayAlign: 'left', // Change this to 'center' to center equations.
+                "HTML-CSS": {
+                    styles: {'.MathJax_Display': {"margin": 0}}
+                }
+            });
+            MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+        }
+    }
+    init_mathjax();
+    </script>
+    
+    <link rel="stylesheet" media="print" href="IPslider/themes/impress/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="IPslider/themes/impress/css/screen.css">
+    <link rel="stylesheet" media="ipython" href="IPslider/themes/impress/css/ipython.css">
+    
+    
+    <!-- /Styles -->
+
+</head>
+<body>
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support features required</b> by impress.js, so are presented with simplified version of this presentation.</p>
+        <p>For the best experience please use latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 and Internet Explorer 10 <i>should</i> also handle it.</p>
+    </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="6400" data-y="3200"
+                 data-rotate="12" data-scale="2">
+            
+        
+            
+               <header><h1><h1>Introducción a Python Científico.</h1></h1></header>
+            
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  1/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="4800" data-y="2400"
+                 data-rotate="14" data-scale="3">
+            
+        
+            
+               <header><h1><h1>1.1 - ¿Quién les habla?</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Damián Avila.</li>
+<li>Bioquímico. Docente. Doctorando.</li>
+<li>Esencialmente, Curioso...</li>
+<li>Hobby (?): Estadística y finanzas, tanto como para construir modelos
+cuantitativos financieros usando... adivinen... Python.</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  2/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="3200" data-y="6400"
+                 data-rotate="36" data-scale="4">
+            
+        
+            
+               <header><h1><h1>1.2 - ¿Qué hace un científico?</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Obtiene datos de un experimento o una simulación.</li>
+<li>Manipula y procesa los datos obtenidos.</li>
+<li>Visualiza los resultados (para tratar de entender que es lo que está
+pasando).</li>
+<li>Comunica los resultados (presentaciones, papers, libros, etc).</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  3/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="1600" data-y="4000"
+                 data-rotate="28" data-scale="5">
+            
+        
+            
+               <header><h1><h1>1.3 - ¿Qué necesita un científico?</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Un lenguaje fácil de aprender.</li>
+<li>Un lenguaje que tenga versatilidad.</li>
+<li>Un lenguaje con una sintáxis simple y de alto nivel.</li>
+<li>Una colección de herramientas básicas para el tratamiento y
+visualización de datos.</li>
+<li>Un tiempo de desarrollo reducido y un tiempo de ejecución rápido.</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  4/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="0" data-y="9600"
+                 data-rotate="60" data-scale="6">
+            
+        
+            
+               <header><h1><h1>1.4 - ¿Cuáles son las alternativas?</h1></h1></header>
+            
+            
+               <section>
+                  <div><p><strong>Lenguajes *compilados*: C, C++, Fortran.</strong></p>
+<p>Ventajas:</p>
+<ul class="simple">
+<li>Rápidos.</li>
+<li>Compiladores <em>super</em> optimizados.</li>
+<li>Librerías científicas optimizadas.</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  5/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-1600" data-y="5600"
+                 data-rotate="42" data-scale="7">
+            
+        
+            
+               <header><h1><h1>1.4 - ¿Cuáles son las alternativas?</h1></h1></header>
+            
+            
+               <section>
+                  <div><p><strong>Lenguajes *compilados*: C, C++, Fortran.</strong></p>
+<p>Desventajas:</p>
+<ul class="simple">
+<li>No hay interactividad durante el desarrollo y, necesariamente, hay
+que compilar.</li>
+<li>Sintáxis compleja.</li>
+<li>Manejo manual de la memoria.</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  6/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-3200" data-y="12800"
+                 data-rotate="84" data-scale="1">
+            
+        
+            
+               <header><h1><h1>1.4 - ¿Cuáles son las alternativas?</h1></h1></header>
+            
+            
+               <section>
+                  <div><p><strong>Lenguajes para *scripting*: Matlab.</strong></p>
+<p>Ventajas:</p>
+<ul class="simple">
+<li>Múltiples librerías con numerosos algoritmos para la resolución de
+diferentes problemas.</li>
+<li>Una rápida ejecución debido a que las librerías normalmente están
+escritas en un lenjuaje compilado.</li>
+<li>Un entorno de desarrollo <em>agradable</em> y funcional.</li>
+<li>Soporte comercial disponible.</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  7/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-4800" data-y="7200"
+                 data-rotate="56" data-scale="2">
+            
+        
+            
+               <header><h1><h1>1.4 - ¿Cuáles son las alternativas?</h1></h1></header>
+            
+            
+               <section>
+                  <div><p><strong>Lenguajes para *scripting*: Matlab.</strong></p>
+<p>Desventajas:</p>
+<ul class="simple">
+<li>El lenguaje de base puede ser restrictivo para usuarios avanzados.</li>
+<li>&quot;Hay que poner la papota&quot;</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  8/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-6400" data-y="16000"
+                 data-rotate="108" data-scale="3">
+            
+        
+            
+               <header><h1><h1>1.4 - ¿Cuáles son las alternativas?</h1></h1></header>
+            
+            
+               <section>
+                  <div><p><strong>Más lenguajes para *scripting*: Scilab, Octave, R, Julia, etc.</strong></p>
+<p>Ventajas:</p>
+<ul class="simple">
+<li>Código abierto y gratuitos.</li>
+<li>Algunas características pueden ser muy enfocadas y avanzadas (pj:
+estadística y R).</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  9/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-8000" data-y="800"
+                 data-rotate="70" data-scale="4">
+            
+        
+            
+               <header><h1><h1>1.4 - ¿Cuáles son las alternativas?</h1></h1></header>
+            
+            
+               <section>
+                  <div><p><strong>Más lenguajes para *scripting*: Scilab, Octave, R, Julia, etc.</strong></p>
+<p>Desventajas:</p>
+<ul class="simple">
+<li>Menos algoritmos disponibles en comparación a Matlab.</li>
+<li>El lenguaje de base puede ser restrictivo para usuarios avanzados.</li>
+<li>Algunas características pueden ser muy enfocadas y avanzadas (pj:
+gráficos y Gnuplot).</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  10/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-9600" data-y="3200"
+                 data-rotate="132" data-scale="5">
+            
+        
+            
+               <header><h1><h1>1.5 - Che... y Python?</h1></h1></header>
+            
+            
+               <section>
+                  <div><p>Ventajas:</p>
+<ul class="simple">
+<li>Muchas librerias científicas.</li>
+<li>Sintaxis simple, que permite escribir código bien estructurado y
+fácil de leer.</li>
+<li>Muchas librerias &quot;complementarias&quot; que permiten realizar otras tareas
+adicionales y necesarias.</li>
+<li>Código abierto y gratuito.</li>
+<li>Popular.</li>
+<li>Gran comunidad soportando el desarrollo y evolución del lenguaje.</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  11/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-11200" data-y="2400"
+                 data-rotate="84" data-scale="6">
+            
+        
+            
+               <header><h1><h1>1.5 - Che... y Python?</h1></h1></header>
+            
+            
+               <section>
+                  <div><p>Desventajas:</p>
+<ul class="simple">
+<li>Un entorno de desarrollo menos <em>agradable</em> comparado con Matlab
+(<strong>totalmente discutible...</strong>).</li>
+<li>Algunos algoritmos especializados todavía no se han desarrollado
+(<strong>pero no falta mucho...</strong>).</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  12/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-12800" data-y="6400"
+                 data-rotate="156" data-scale="7">
+            
+        
+            
+               <header><h1><h1>1.6 - Python <em>científico</em>.</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Python, un leguaje genérico y moderno.</li>
+<li>IPython, un interprete interactivo avanzado, un web-notebook, una
+infraestructura para <em>computación</em> en paralelo.</li>
+<li>Numpy, objetos tipo arreglos y rutinas para manipularlos.</li>
+<li>Scipy, librerías para procesamiento de datos de alto nivel:
+optimización, regresión, interpolación, etc.</li>
+<li>Matplotlib, visualización 2D: &quot;plots&quot; listos para la publicación.</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  13/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-14400" data-y="4000"
+                 data-rotate="98" data-scale="1">
+            
+        
+            
+               <header><h1><h1>2.1 - IPython.</h1></h1></header>
+            
+            
+               <section>
+                  <div><p><strong>Es una poderosa herramienta para la *computación* científica
+interactiva y exploratoria.</strong></p>
+<ul class="simple">
+<li>Interpretes interactivos <em>poderosos</em> (terminal y basada en Qt).</li>
+<li>Un web-notebook con las mismas funcionalidades básicas que los
+interpretes interactivos pero con soporte para video, texto, código,
+expresiones matematicas y plot embebidos.</li>
+<li>Soporte para la visualización interactiva de datos y uso de
+bibliotecas GUI.</li>
+<li>Herramientas de alta performance para la cumputación en paralelo.</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  14/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-16000" data-y="9600"
+                 data-rotate="180" data-scale="2">
+            
+        
+            
+               <header><h1><h1>2.2 - Clientes de IPython</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Consola.</li>
+<li>Consola Qt.</li>
+<li>Web-notebook: Es donde escribí esta presentación (rendered by vIPer).</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  15/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-17600" data-y="5600"
+                 data-rotate="112" data-scale="3">
+            
+        
+            
+               <header><h1><h1>2.3 - Computación en paralelo.</h1></h1></header>
+            
+            
+               <section>
+                  <div><p>En los últimos 3 años, IPython a desarrollado toda una arquitectura
+diseñanda especificamente para soportar computación en paralelo.</p>
+<p>Un tema muy interesante pero fuera del &quot;scope&quot; de esta charla... si
+están interesados pueden visitar <a class="reference external" href="http://ipython.org">http://ipython.org</a></p></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  16/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-19200" data-y="12800"
+                 data-rotate="204" data-scale="4">
+            
+        
+            
+               <header><h1><h1>Juguemos un poco...</h1></h1></header>
+            
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  17/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-20800" data-y="7200"
+                 data-rotate="126" data-scale="5">
+            
+        
+            
+            
+               <section>
+                  <div><p><a class="reference external" href="http://damianavila.github.com/Python_Cientifico/Python_Cientifico_ipython_complete.html">http://damianavila.github.com/Python_Cientifico/Python_Cientifico_ipython_complete.html</a></p></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  18/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-22400" data-y="16000"
+                 data-rotate="228" data-scale="6">
+            
+        
+            
+               <header><h1><h1>3.1 - Numpy.</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Python tiene listas, enteros, punto flotante, etc. Para cálculo
+numérico necesitamos más... allí aparece Numpy.</li>
+<li>Numpy es un paquete que provee a Python con arreglos
+multidimensionales de alta eficiencia y diseñados para cálculo
+científico.</li>
+<li>Un array puede contener:<ul>
+<li>tiempos discretos de un experimento o simulación.</li>
+<li>señales grabadas por un instrumento de medida.</li>
+<li>pixeles de una imagen, etc.</li>
+</ul>
+</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  19/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-24000" data-y="800"
+                 data-rotate="140" data-scale="7">
+            
+        
+            
+            
+               <section>
+                  <div><p><a class="reference external" href="http://damianavila.github.com/Python_Cientifico/Python_Cientifico_numpy_complete.html">http://damianavila.github.com/Python_Cientifico/Python_Cientifico_numpy_complete.html</a></p></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  20/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-25600" data-y="3200"
+                 data-rotate="252" data-scale="1">
+            
+        
+            
+               <header><h1><h1>4.1 - Scipy.</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Scipy contiene varias herramientas para realizar tareas <em>comunes</em> en
+el ambiente científico.</li>
+<li>Provee de diferentes submodulos específicos para distintas
+aplicaciones:<ul>
+<li>cluster &gt;&gt;&gt; Vector quantization / Kmeans</li>
+<li>fftpack &gt;&gt;&gt; Fourier transform</li>
+<li>integrate &gt;&gt;&gt; Integration routines</li>
+<li>interpolate &gt;&gt;&gt; Interpolation</li>
+</ul>
+</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  21/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-27200" data-y="2400"
+                 data-rotate="154" data-scale="2">
+            
+        
+            
+               <header><h1><h1>4.1 - Scipy.</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Provee de diferentes submodulos específicos para distintas
+aplicaciones:<ul>
+<li>io &gt;&gt;&gt; Data input and output</li>
+<li>linalg &gt;&gt;&gt; Linear algebra routines</li>
+<li>maxentropy &gt;&gt;&gt; Routines for fitting maximum entropy models</li>
+<li>ndimage &gt;&gt;&gt; n-dimensional image package</li>
+<li>odr &gt;&gt;&gt; Orthogonal distance regression</li>
+<li>optimize &gt;&gt;&gt; Optimization</li>
+</ul>
+</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  22/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-28800" data-y="6400"
+                 data-rotate="276" data-scale="3">
+            
+        
+            
+               <header><h1><h1>4.1 - Scipy.</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Provee de diferentes submodulos específicos para distintas
+aplicaciones:<ul>
+<li>signal &gt;&gt;&gt; Signal processing</li>
+<li>sparse &gt;&gt;&gt; Sparse matrices</li>
+<li>spatial &gt;&gt;&gt; Spatial data structures and algorithms</li>
+<li>special &gt;&gt;&gt; Any special mathematical functions</li>
+<li>stats &gt;&gt;&gt; Statistics</li>
+</ul>
+</li>
+<li>Scipy está basado y hace un uso extensivo de los arreglos provistos
+por Numpy.</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  23/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-30400" data-y="4000"
+                 data-rotate="168" data-scale="4">
+            
+        
+            
+            
+               <section>
+                  <div><p><a class="reference external" href="http://damianavila.github.com/Python_Cientifico/Python_Cientifico_scipy_complete.html">http://damianavila.github.com/Python_Cientifico/Python_Cientifico_scipy_complete.html</a></p></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  24/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-32000" data-y="9600"
+                 data-rotate="300" data-scale="5">
+            
+        
+            
+               <header><h1><h1>5.1 - Matplotlib.</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Matplotlib es el paquete más usado en la comunidad de Python para
+graficar en 2D. Provee una visualización rápida de los datos a
+analizar y las figuras obtenidas (en varios formatos diponibles) son
+publicables.</li>
+<li>pylab provee de una interface procedural a la librería matplotlib
+(orientada a objetos), con una sintaxis muy cercana a la disponible
+en Matlab.</li>
+<li>IPython provee un modo (--pylab) que permite disponer de las figuras
+durante la sesión interactiva.</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  25/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-33600" data-y="5600"
+                 data-rotate="182" data-scale="6">
+            
+        
+            
+            
+               <section>
+                  <div><p><a class="reference external" href="http://damianavila.github.com/Python_Cientifico/Python_Cientifico_matplotlib_complete.html">http://damianavila.github.com/Python_Cientifico/Python_Cientifico_matplotlib_complete.html</a></p></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  26/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-35200" data-y="12800"
+                 data-rotate="324" data-scale="7">
+            
+        
+            
+               <header><h1><h1>5.3 - Otros tipos de plots: Galería.</h1></h1></header>
+            
+            
+               <section>
+                  <div><p><a class="reference external" href="http://matplotlib.sourceforge.net/gallery">http://matplotlib.sourceforge.net/gallery</a></p></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  27/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-36800" data-y="7200"
+                 data-rotate="196" data-scale="1">
+            
+        
+            
+               <header><h1><h1>6 - Herramientas avanzadas.</h1></h1></header>
+            
+            
+               <section>
+                  <div><p><a class="reference external" href="http://pandas.pydata.org">http://pandas.pydata.org</a></p>
+<p><a class="reference external" href="http://statsmodels.sourceforge.net">http://statsmodels.sourceforge.net</a></p>
+<p><a class="reference external" href="http://scikit-learn.org/stable">http://scikit-learn.org/stable</a></p></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  28/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-38400" data-y="16000"
+                 data-rotate="348" data-scale="2">
+            
+        
+            
+               <header><h1><h1>7- Performance</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Cython: extensiones en C para Python. <a class="reference external" href="http://www.cython.org">http://www.cython.org</a></li>
+<li>PyPy: implementación de Python en Python (compilador JIT).
+<a class="reference external" href="http://pypy.org">http://pypy.org</a></li>
+<li>Numba: convierte código Python a código LLVM code que luego es
+ejecutado. <a class="reference external" href="http://numba.pydata.org">http://numba.pydata.org</a></li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  29/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-40000" data-y="800"
+                 data-rotate="210" data-scale="3">
+            
+        
+            
+               <header><h1><h1>8- Obtención de las herramientas.</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>GNU-LINUX</li>
+</ul>
+<p>$ sudo apt-get install python-scipy python-matplotlib</p>
+<p>$ sudo pip install pandas scikit-learn statsmodels</p>
+<p>$ sudo pip install ipython[zmq,qtconsole,notebook,test]</p>
+<p>$ sudo apt-get install python-qt4 python-pygments</p></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  30/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-41600" data-y="3200"
+                 data-rotate="372" data-scale="4">
+            
+        
+            
+               <header><h1><h1>8- Obtención de las herramientas.</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Python(X,Y) <a class="reference external" href="http://code.google.com/p/pythonxy">http://code.google.com/p/pythonxy</a></li>
+<li>EPD Free (Enthough Python Distribution) <a class="reference external" href="http://www.enthought.com">http://www.enthought.com</a></li>
+<li>Anaconda (Continuum) <a class="reference external" href="http://continuum.io">http://continuum.io</a></li>
+<li>Ospy (Omicron Python Distribution)... muy pronto (OQUANTA... o sea
+/me)</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  31/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-43200" data-y="2400"
+                 data-rotate="224" data-scale="5">
+            
+        
+            
+               <header><h1><h1>9- Ejemplos y materiales.</h1></h1></header>
+            
+            
+               <section>
+                  <div><p><a class="reference external" href="http://jakevdp.github.com/blog/2012/08/18/matplotlib-animation-tutorial">http://jakevdp.github.com/blog/2012/08/18/matplotlib-animation-tutorial</a></p>
+<p><a class="reference external" href="http://scipy-lectures.github.com">http://scipy-lectures.github.com</a></p>
+<p><a class="reference external" href="http://pyvideo.org/category/18/pydata-2012">http://pyvideo.org/category/18/pydata-2012</a></p>
+<p>Videos de conferencias Scipy en Youtube.</p>
+<p>Mucha gente: Fernando Perez, Wes Mackinney, Travis Oliphant, Peter Wang,
+Josua Bloom, Titus Brown... y muchos más!</p></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  32/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-44800" data-y="6400"
+                 data-rotate="396" data-scale="6">
+            
+        
+            
+               <header><h1><h1>10- Conclusiones.</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Python se ha convertido en el lenguaje de elección dentro del ámbito
+científico (salvando ciertos <em>nichos</em> y en ciencias de la
+computación) debido a la multiplicidad de herramientas que brinda, a
+la potencialidad en el perfeccionamiento de las mismas y la continua
+generación de nuevos modulos cada vez más especializados.</li>
+<li>Claro, existen problemas para resolver y algunas cuestiones técnicas
+que desarrollar (no todo es color de rosa...).</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  33/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-46400" data-y="4000"
+                 data-rotate="238" data-scale="7">
+            
+        
+            
+               <header><h1><h1>10- Conclusiones.</h1></h1></header>
+            
+            
+               <section>
+                  <div><ul class="simple">
+<li>Sin embargo, las perspectivas son muy altas, lo cual se ve reflejado
+no sólo en la proliferación de científicos que usan Python en su
+trabajo diario, sino también en la organización de conferencias
+específicas a nivel internacional (SciPy, EuroSciPy, etc) y en el
+aumento del número de publicaciones con código escrito en Python.</li>
+<li>Muchas empresas e industrias se valen de las mismas herramientas para
+el desarrollo o análisis de sus procesos productivos.</li>
+</ul></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  34/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+        <!-- slide source: Python_Cientifico_PyConAr2012.rst -->
+        
+            
+            <div class="step" data-x="-48000" data-y="9600"
+                 data-rotate="420" data-scale="1">
+            
+        
+            
+               <header><h1><h1>11 - Contacto.</h1></h1></header>
+            
+            
+               <section>
+                  <div><h1>Damián Avila</h1>
+<ul class="simple">
+<li>web: www.oquanta.info</li>
+<li>blog: damian.oquanta.info</li>
+<li>email: <a class="reference external" href="mailto:info&#64;oquanta.info">info&#64;oquanta.info</a></li>
+<li>twitter: &#64;oquanta</li>
+</ul>
+
+
+<h1>y por otros lados también...</h1></div>
+               </section>
+            
+            <footer>
+                
+                <aside class="source">
+                  Source: <a href="Python_Cientifico_PyConAr2012.rst">Python_Cientifico_PyConAr2012.rst</a>
+                </aside>
+<!--                 -->
+<!--                <aside class="page_number"> -->
+<!--                  35/35 -->
+<!--                </aside> -->
+            </footer>
+        </div>
+      
+</div>
+<!-- Javascripts -->
+
+<script type="text/javascript" src="IPslider/themes/impress/js/slides.js"></script>
+
+
+<!-- /Javascripts -->
+</body>
+</html>
